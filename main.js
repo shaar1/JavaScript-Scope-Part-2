@@ -111,7 +111,7 @@ function testFunc() {
 
     console.log(x + 2);
     */
-
+/*
    var x = 1;
 
    function testFunc() {
@@ -132,3 +132,75 @@ function testFunc() {
        testFunc();
    
        console.log(x + 2);
+       */
+/*
+      var x = 1;
+
+      function testParent() {
+      
+          "use strict";
+      
+          var x = 5;
+      
+          function testChild() {
+      
+              var calc = x + 2;
+   
+              console.log(calc)
+   
+          }
+          return testChild();
+          }
+          testParent();
+      
+          console.log(x + 2);
+
+*/
+/*
+var x = 1;
+
+function testParent() {
+
+    "use strict";
+
+    var x = 5;
+
+    function testChild() {
+
+        var calc = x + 2;
+
+        console.log(calc)
+
+    }
+    console.log(calc)
+
+    return testChild();
+    }
+    testParent();
+
+    console.log(x + 2);
+    */
+
+var x = 1;
+
+function testParent() {
+
+    "use strict";
+
+    var x = 5;
+
+    function testChild() {
+        var x = 100,
+
+            calc = x + 2;
+
+        console.log(calc);
+
+    }
+
+    return testChild();
+}
+
+testParent();
+
+console.log(x + 2);
