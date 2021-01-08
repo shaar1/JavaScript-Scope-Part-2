@@ -283,6 +283,7 @@ testParent();
 console.log(x + 2);
 
 */
+/*
 var x = 1;
 // scope A
 // x Is Accessed From Everywhere
@@ -304,3 +305,35 @@ function testParent() {
 }
 testParent();
 console.log(x + 2);
+*/
+/*
+function testParent() {
+
+    "use strict";
+
+    function testChild(){
+        function testGrand() {
+
+            var myName= "Abdallah";
+        }
+    }
+}
+testParnet()
+*/
+
+function testParent() {
+    "use strict";
+
+    var myName = "Abdallah";
+    console.log(myName);
+
+    function testChild() {
+        console.log(myName);
+
+        function testGrand() {
+            console.log(myName);
+
+        }
+    }
+}
+testParnet()
